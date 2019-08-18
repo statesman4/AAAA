@@ -4,7 +4,7 @@
           "Name":"FAAA Convention",
           "Date":"07/26/2019",
           "Description":"",
-          "File":"Assets\Files\Projects\FAAAConvention.pdf"
+          "File":"Assets/Files/Projects/FAAAConvention.pdf"
         },
         {
           "Name":"Annual Mushaira - 2018",
