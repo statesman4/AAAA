@@ -6,10 +6,10 @@
           "Description":"",
           "Images":[
             {
-              "Path":"Assets/Files/gallery/mercer/mercer1.jpg"
+              "Path":"Assets/Files/gallery/mercer/mercer1.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/mercer/mercer2.jpg"
+              "Path":"Assets/Files/gallery/mercer/mercer2.JPG"
             }
           ]
         },
@@ -19,40 +19,40 @@
           "Description":"",
           "Images":[
             {
-              "Path":"Assets/Files/gallery/2016mushaira/1.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/1.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/2.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/2.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/3.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/3.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/4.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/4.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/5.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/5.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/6.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/6.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/7.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/7.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/8.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/8.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/9.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/9.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/10.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/10.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/11.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/11.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/2016mushaira/12.jpg"
+              "Path":"Assets/Files/gallery/2016mushaira/12.JPG"
             }
           ]
         },
@@ -62,34 +62,34 @@
           "Description":"",
           "Images":[
             {
-              "Path":"Assets/Files/gallery/jamiavc/1.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/1.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/2.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/2.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/3.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/3.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/4.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/4.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/5.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/5.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/6.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/6.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/7.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/7.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/8.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/8.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/9.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/9.JPG"
             },
             {
-              "Path":"Assets/Files/gallery/jamiavc/10.jpg"
+              "Path":"Assets/Files/gallery/jamiavc/10.JPG"
             }
           ]
         },
@@ -126,7 +126,7 @@
               "Path":"Assets/Files/gallery/katju/9.jpg"
             },
             {
-              "Path":"Assets/Files/gallery/katju/10.jpg"
+              "Path":"Assets/Files/gallery/katju/10.JPG"
             },
             {
               "Path":"Assets/Files/gallery/katju/11.jpg"
@@ -135,7 +135,7 @@
               "Path":"Assets/Files/gallery/katju/12.jpg"
             },
             {
-              "Path":"Assets/Files/gallery/katju/13.jpg"
+              "Path":"Assets/Files/gallery/katju/13.JPG"
             },
             {
               "Path":"Assets/Files/gallery/katju/14.jpg"
@@ -157,7 +157,7 @@
           "Description":"",
           "Images":[
             {
-              "Path":"Assets/Files/gallery/foi2017/1.jpg"
+              "Path":"Assets/Files/gallery/foi2017/1.JPG"
             },
             {
               "Path":"Assets/Files/gallery/foi2017/2.jpg"

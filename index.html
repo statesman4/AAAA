@@ -78,21 +78,22 @@
 										<img src="Assets/images/aalogo.png" class="img-fluid logo" alt="Gas South"/>
 									</div>
                 </div>
-								<div class="row col-xl-8 col-lg-7 col-md-7 col-sm-7 col-9 bottomContainer">
+								<div class="row col-xl-8 col-lg-7 col-md-7 col-sm-7 col-9 bottomContainer" style="height:20px;">
 									<div class="normalfont headerLink" style="margin-left:20px;margin-top:12px;margin-right:10px;"><a class="transform cursor" onclick="getBaseUrl('events');">Events</a></div>
 									<div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;"><a class="transform cursor" onclick="getBaseUrl('gallery');">Gallery</a></div>
                   <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;"><a class="transform cursor" onclick="getBaseUrl('projects');">Projects</a></div>
                   <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;"><a class="transform cursor" onclick="getBaseUrl('contact');">Contact Us</a></div>
-									<div class="normalfont headerLink" style="margin-top:12px;"><a class="cursor" onclick="getBaseUrl('aboutus');">About Us</a></div>
+                  <div class="normalfont headerLink" style="margin-top:12px;"><a class="cursor" onclick="getBaseUrl('aboutus');">About Us</a></div>
+                  <div class="normalfont" style="margin-top:12px;width:20%;">&nbsp;</div>
                 </div>
 							</div>
 						  <div class="mobileMenu topMenu">
-								<div class="row col-sm-8 col-6">
+								<div class="row col-sm-10 col-xs-10">
 									<div class="normalfont">
 										<img src="Assets/images/aalogo.png" class="img-fluid logo" alt="Gas South"/>
 									</div>
 								</div>
-								<div class="row col-sm-4 col-6 bottomContainer">
+								<div class="row col-sm-2 col-xs-2 bottomContainer"style="margin-top:-50px;padding-right:100px;">
 									<div class="dropdown btn-group">
 										<button id="mobilMenu" class="btn mobilebtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
@@ -290,38 +291,78 @@
                       </div>
                     </div>
                   </div>
+                  <!--EVENTS-->
+                  <div id="events">
+                    <div class="topContainer">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="contentText" style="padding-left:10px;padding-top:40px;">
+                            <p class="secondHeading"><strong>Events Organized by AAAA</strong></p>
+                            <p>
+                                Coming Soon!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--GALLERY-->
+                  <div id="gallery">
+                    <div class="topContainer">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="contentText" style="padding-left:10px;padding-top:40px;">
+                            <p class="secondHeading"><strong>Picture Gallery</strong></p>
+                            <p>
+                                Coming Soon!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="gallerydetails" class="row hideSection">
+                          Coming Soon
+                      </div>
+                    </div>
+                  </div>
+                  <!--PROJECTS-->
+                  <div id="projects">
+                    <div class="topContainer">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="contentText" style="padding-left:10px;padding-top:40px;">
+                            <p class="secondHeading"><strong>AAAA Projects</strong></p>
+                            <p>
+                                Coming Soon!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="projectdetails" class="row hideSection">
+                          Coming Soon
+                      </div>
+                    </div>
+                  </div>
             </section>
 						<footer class="wrapper">
               <div class="footerContainer">
-                <div class="flex-col">
-									<div class="footerHeading normalfont"><a class="footerLink cursor" onclick="getBaseUrl('events');">Events</a></div>
-                </div>
-                <div class="flex-col">
-                  <div class="footerHeading normalfont"><a class="footerLink cursor" onclick="getBaseUrl('gallery');">Gallery</a></div>
-                </div>
-								<div class="flex-col">
-                  <div class="footerHeading normalfont"><a class="footerLink cursor" onclick="getBaseUrl('projects');">Projects</a></div>
-                </div>
-								<div class="flex-col">
-										<div class="footerHeading normalfont"><a class="footerLink cursor" onclick="getBaseUrl('contact');">Contact Us</a></div>
-                </div>
-								<div class="flex-col">
-										<div class="footerHeading normalfont"><a class="footerLink cursor" onclick="getBaseUrl('aboutus');">About Us</a></div>
+                <div class="row ml-auto mr-3">
+                  <div class="footerText col-auto"><a class="footerLink cursor" onclick="getBaseUrl('events');">Events</a></div>
+                  <div class="footerText col-auto"><a class="footerLink cursor" onclick="getBaseUrl('gallery');">Gallery</a></div>
+                  <div class=" footerText col-auto"><a class="footerLink cursor" onclick="getBaseUrl('projects');">Projects</a></div>
+                  <div class="footerText col-auto"><a class="footerLink cursor" onclick="getBaseUrl('contact');">Contact Us</a></div>
+                  <div class="footerText col-auto"><a class="footerLink cursor" onclick="getBaseUrl('aboutus');">About Us</a></div>
                 </div>
                <div class="row col-12">&nbsp;<hr/></div>
 							 <div class="container-fluid">
 								<div class="row">
-									<div class="socialLinksContainer">
+									<!-- <div class="socialLinksContainer">
 										<div id="social1" class="socialHeading" style="padding-right:10px;">Follow Along</div>
 										<div id="social2" class="socialHeading" style="padding-top:5px;padding-right:15px;"><a class="footerLink" href="https://www.facebook.com/gassouth" target="_blank"><i class="fa fa-facebook-f social" aria-hidden="true"></i></a></div>
 										<div id="social3" class="socialHeading" style="padding-top:5px;padding-right:15px;"><a class="footerLink" href="https://twitter.com/GasSouth" target="_blank"><i class="fa fa-twitter social" aria-hidden="true"></i></a></div>
 										<div id="social3" class="socialHeading" style="padding-top:5px;"><a class="footerLink" href="https://www.linkedin.com/company/gas-south" target="_blank"><i class="fa fa-linkedin-square social" aria-hidden="true"></i></a></div>
-										<!-- <div class="socialHeading" style="padding-top:5px;">
-											<i class="customLink fa fa-search fa-lg" onClick="showHideSearch();">&nbsp;</i>
-										</div> -->
-									</div>
+                  </div> -->
 									<div class="bottomLinksContainer">
-										<div id="social4" class="socialText footerLink" style="padding-right:20px;">&copy;&nbsp;Powered By: Inacomm, LLC</div>
+										<div id="social4" class="socialText footerLink"style="padding-left:5px;padding-right:20px;">&copy;&nbsp;Powered By: Inacomm, LLC</div>
                   </div>
 								</div>
               </div>
@@ -345,6 +386,7 @@
 				<script src="Assets/External/Scripts/jquery-3.3.1.min.js"></script>
         <script src="Assets/External/Scripts/bootstrap.bundle.min.js"></script>
         <script type="text/javascript">
+         var githubUrl = "https://statesman4.github.io/AAAA/";
           var toper = $('a#top');
       
       
@@ -371,6 +413,9 @@
             $('#home').addClass('hideSection');
             $('#aboutUs').addClass('hideSection');
             $('#contactUs').addClass('hideSection');
+            $('#events').addClass('hideSection');
+            $('#gallery').addClass('hideSection');
+            $('#projects').addClass('hideSection');
             switch (section){
               case "home":
                 $('#home').removeClass('hideSection');
@@ -380,6 +425,15 @@
                 break;
               case "aboutus":
                 $('#aboutUs').removeClass('hideSection');
+                break;
+              case "events":
+                $('#events').removeClass('hideSection');
+                break;
+              case "gallery":
+                $('#gallery').removeClass('hideSection');
+                break;
+              case "projects":
+                $('#projects').removeClass('hideSection');
                 break;
               default:
               $('#home').removeClass('hideSection');

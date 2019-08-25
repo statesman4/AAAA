@@ -27,6 +27,7 @@ a:hover {
 .headerLink {
   color: #145002;
   display:block;
+  border-bottom:solid #000 1px;
 }
 .headerLink:hover {
   color: #e75525;
@@ -82,7 +83,6 @@ a:hover {
     background-color: #e75525 !important;
 }
 .wrapper{
-    margin:0 auto !important;
     padding-top:10px;
     background-color:#979797;
 }
@@ -106,13 +106,13 @@ a:hover {
     min-width: 100%;
     }
 .footerContainer{
-    max-width:95%;
+    max-width:100%;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:center; 
-    align-items:center;
-    text-align:center;
+    justify-content:right;
+    align-items:right;
+    text-align:right;
  }
 .socialContainer{
     display:flex;
@@ -149,9 +149,12 @@ a:hover {
     color: #e75525;
   }
   .footerText{
-    color:#979797;
+    color:#fff;
     text-align:left;
    }
+   .footerText:hover{
+      color: #e75525;
+    }
   .socialHeading{
     color:#fff;
     font-weight:bold;
@@ -232,6 +235,7 @@ hr {
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
+    font-weight:bold;
 }
 .mobileMenu{
     display: none;
@@ -298,7 +302,7 @@ padding-bottom:2px;
     font-size:16px;
 }
 .footerText{
-    font-size:13px;
+    font-size:15px;
 }   
 .socialHeading{
     font-size: 14px;
@@ -400,10 +404,10 @@ padding-bottom:2px;
 .bottomLinksContainer{
   display:flex;
   display: -webkit-flex; /* NEW */
-  flex-basis:62%;
+  flex-basis:98%;
   flex-grow:0;
   justify-content:flex-end;
-  -webkit-flex-basis:62%;
+  -webkit-flex-basis:98%;
   -webkit-flex-grow:0;
   justify-content:-webkit-flex-end;
   padding-bottom:5px;
@@ -566,7 +570,7 @@ a#top {
         font-size:12px;
     }
     .footerText{
-        font-size:12px;
+        font-size:14px;
     }   
     .socialHeading{
         font-size: 13px;
