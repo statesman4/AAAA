@@ -68,12 +68,13 @@ function LoadingError(error){
 }
 var TransformEventData = function (results) {
   Events = [];
-  totalRecords = results["count"];
-  $.each(results.value, function (i, item) {
+  totalRecords = results.events.length;
+  $.each(results.events, function (i, item) {
       Events.push({
+          Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
-          Description:item['Date'],
+          Description: item['Description'],
           FileName: item['File']
       });
   });
@@ -81,12 +82,13 @@ var TransformEventData = function (results) {
 };
 var TransformProjectData = function (results) {
   Projects = [];
-  totalRecords = results["count"];
-  $.each(results.value, function (i, item) {
+  totalRecords = results.projects.length;
+  $.each(results.projects, function (i, item) {
     Projects.push({
+          Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
-          Description:item['Date'],
+          Description: item['Description'],
           FileName: item['File']
       });
   });
@@ -94,14 +96,14 @@ var TransformProjectData = function (results) {
 };
 var TransformGalleryData = function (results) {
   Galleries = [];
-  totalRecords = results["count"];
-  $.each(results.value, function (i, item) {
+  totalRecords = results.galleries.length;
+  $.each(results.galleries, function (i, item) {
     Galleries.push({
+          Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
-          Description:item['Date'],
-          FileName: item['File']
-      });
+          Description: item['Description'],
+        });
   });
   return Galleries;
 };
