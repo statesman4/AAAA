@@ -19,5 +19,5 @@ var allProjects = {
           "File":""
         }
       ]
-    };
+    }
         
