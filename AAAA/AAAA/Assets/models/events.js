@@ -1,4 +1,4 @@
-var allEvents = {
+{
   "events": [
         {
           "Name":"FAAA Convention",

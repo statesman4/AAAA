@@ -1,7 +1,7 @@
 var Events = [];
 var Projects = [];
 var Galleries = [];
-var baseUrl = "https://statesman4.github.io/AAAA";
+var baseUrl = "https://statesman4.github.io/AAAA/AAAA/AAAA";
 
 function hitApi(url, callback) {
   var req = new XMLHttpRequest();
