@@ -1,4 +1,4 @@
-var allProjects = {
+{
   "projects": [
         {
           "Name":"FAAA Convention",
