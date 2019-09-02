@@ -1,5 +1,5 @@
 {
-  "count:5,
+  "count":5,
   "galleries": [
         {
           "Id":1,

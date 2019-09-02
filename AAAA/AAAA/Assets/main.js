@@ -78,7 +78,52 @@ var TransformEventData = function (results) {
           FileName: item['File']
       });
   });
-  return Events;
+  $('#eventItemsDiv').removeClass('hidden');
+    if ($.fn.dataTable.isDataTable('#eventItem')) {
+        $('#eventItem').DataTable().destroy();
+    }
+    $('#eventItem')
+        .DataTable({
+            data: Tasks,
+            "paging": true,
+            "ordering": true,
+            "order": [[0, "desc"]],
+            "info": true,
+            "searching": true,
+            "dom": 'Blfrtip',
+            "pageLength": 25,
+            language: {
+                 searchPlaceholder: "  Search",
+                search: ""
+            },
+            columnDefs: [
+                { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
+                { "width": "15%", className: "map-table-td", targets: 1 },
+                { "width": "35%", className: "map-table-td", targets: 2 },
+                { "width": "25%", className: "map-table-td", targets: 3 }
+            ],
+            'columns': [
+                {
+                    'data': 'Name'
+                },
+                {
+                    'data': 'Date'
+                },
+                {
+                    'data': 'Description'
+                },
+                {
+                  'render': function (data, type, full, meta) {
+                    return '<a class="linkColor" onClick = "EventDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
+                }
+              },
+              
+            ],
+            createdRow: function (row, data, dataIndex) {
+                $(row).addClass('line-on-bottom hidden-cell');
+            }
+        });
+  //return Events;
 };
 var TransformProjectData = function (results) {
   Projects = [];
@@ -107,3 +152,8 @@ var TransformGalleryData = function (results) {
   });
   return Galleries;
 };
+function EventDetails(file){
+  if (file !== "") {
+    window.open(file, "_blank");
+  }
+}
