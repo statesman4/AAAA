@@ -84,13 +84,12 @@ var TransformEventData = function (results) {
     }
     $('#eventItem')
         .DataTable({
-            data: Tasks,
+            data: Events,
             "paging": true,
             "ordering": true,
             "order": [[0, "desc"]],
             "info": true,
             "searching": true,
-            "dom": 'Blfrtip',
             "pageLength": 25,
             language: {
                  searchPlaceholder: "  Search",
@@ -114,7 +113,7 @@ var TransformEventData = function (results) {
                 },
                 {
                   'render': function (data, type, full, meta) {
-                    return '<a class="linkColor" onClick = "EventDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
+                      return '<a class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
                 }
               },
               
@@ -137,7 +136,51 @@ var TransformProjectData = function (results) {
           FileName: item['File']
       });
   });
-  return Projects;
+  $('#projectItemDiv').removeClass('hidden');
+  if ($.fn.dataTable.isDataTable('#projectItem')) {
+      $('#projectItem').DataTable().destroy();
+  }
+    $('#projectItem')
+      .DataTable({
+          data: Projects,
+          "paging": true,
+          "ordering": true,
+          "order": [[0, "desc"]],
+          "info": true,
+          "searching": true,
+          "pageLength": 25,
+          language: {
+              searchPlaceholder: "  Search",
+              search: ""
+          },
+          columnDefs: [
+              { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
+              { "width": "15%", className: "map-table-td", targets: 1 },
+              { "width": "35%", className: "map-table-td", targets: 2 },
+              { "width": "25%", className: "map-table-td", targets: 3 }
+          ],
+          'columns': [
+              {
+                  'data': 'Name'
+              },
+              {
+                  'data': 'Date'
+              },
+              {
+                  'data': 'Description'
+              },
+              {
+                  'render': function (data, type, full, meta) {
+                      return '<a class="linkColor" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
+                  }
+              },
+
+          ],
+          createdRow: function (row, data, dataIndex) {
+              $(row).addClass('line-on-bottom hidden-cell');
+          }
+      });
+  //return Projects;
 };
 var TransformGalleryData = function (results) {
   Galleries = [];
@@ -150,10 +193,52 @@ var TransformGalleryData = function (results) {
           Description: item['Description'],
         });
   });
+  $('#galleryItemDiv').removeClass('hidden');
+  if ($.fn.dataTable.isDataTable('#galleryItem')) {
+      $('#galleryItem').DataTable().destroy();
+  }
+    $('#galleryItem')
+    .DataTable({
+        data: Galleries,
+        "paging": true,
+        "ordering": true,
+        "order": [[0, "desc"]],
+        "info": true,
+        "searching": true,
+        "pageLength": 25,
+        language: {
+            searchPlaceholder: "  Search",
+            search: ""
+        },
+        columnDefs: [
+            { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
+            { "width": "15%", className: "map-table-td", targets: 1 },
+            { "width": "35%", className: "map-table-td", targets: 2 }
+        ],
+        'columns': [
+            {
+                'render': function (data, type, full, meta) {
+                    return '<a class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">' + full.Name + '</a>';
+                }
+            },
+            {
+                'data': 'Date'
+            },
+            {
+                'data': 'Description'
+            }
+        ],
+        createdRow: function (row, data, dataIndex) {
+            $(row).addClass('line-on-bottom hidden-cell');
+        }
+    });
   return Galleries;
 };
-function EventDetails(file){
+function ItemDetails(file){
   if (file !== "") {
     window.open(file, "_blank");
   }
+}
+function GelleryDetails(Id) {
+    //load all images that correspond to Id.
 }

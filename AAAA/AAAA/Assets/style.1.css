@@ -18,7 +18,7 @@ main{
 }
 a {
     color: #145002;
-    display:block;
+    display: block;
 }
 a:hover {
     color: #e75525;
@@ -33,15 +33,21 @@ a:hover {
   color: #e75525;
   text-decoration: none;
 }
-.customLink{
-    color: #fff;
-    display:block;
+.customLink {
+    color: #e95524;
+    display: block;
     cursor: pointer;
 }
 .customLink:hover{
     color: #e75525;
     text-decoration: none;
 }
+td.customLink {
+    color: #e95524;
+    display: block;
+    cursor: pointer;
+}
+
 .boldfont{
     font-family: 'GothicBold',arial, helvetica, sans-serif;
 }

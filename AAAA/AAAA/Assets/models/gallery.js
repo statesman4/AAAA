@@ -169,7 +169,7 @@
               "Path":"Assets/Files/gallery/foi2017/2.jpg"
             }
           ]
-        },
+        }
       ]
     }
         

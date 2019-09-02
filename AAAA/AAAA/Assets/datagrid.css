@@ -9,57 +9,294 @@ a:hover {
 color:red;
 font-size:120%;
 }
-.header-height {
-    height: auto;
-}
-.actionbtn {
-    background-color: #fff;
-    border: 1px solid #e75525;
-    color: #e75525;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px;
-    cursor: pointer;
+input {
+    background-color: transparent;
+    background: rgba(0, 0, 0, 0.05);
+    border-style: none;
+    color: inherit;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
-.actionbtn:hover {
-    color: #fff;
-    background-color: #e75525;
+.page-selected {
+    text-decoration: underline;
 }
-.actionbtn {
-    padding: 5px;
-    width: 200px;
-}
-.actionText {
-    font-size: 18px;
-    line-height: 26px;
-}
-.flex-col {
-    flex-direction: column;
-    -webkit-flex-direction: column; /* NEW */
-    align-items: flex-start;
-    align-items: -webkit-flex-start;
-    text-align: left;
-    flex: 1 1 14em;
-    padding-left: 25px;
-}
-.ctaContainer {
-    display: flex;
-    display: -webkit-flex; /* NEW */
-    flex-wrap: wrap;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap; /* NEW */
-    -webkit-flex-direction: row; /* NEW */
-    justify-content: space-between;
-    width: 80%;
-}
-.containerbtmPadding {
-    padding-bottom:50px;
-}
-.sectionShow{
-    display:block;
-}
-.sectionHide {
+
+.hidden {
     display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fixed-table-pagination li a {
+    color: #e95524;
+}
+
+.active > a {
+    background: #e95524 !important;
+    color: #fff;
+}
+
+.pagination a {
+    font-size: 12px;
+}
+
+.cursorStyle {
+    cursor: pointer;
+}
+/* These column stylings are to increasee the width of the address column at the expense of the due date column*/
+.name_col, .acc_col, .bal_col, .paymt_col, .mngacct_col, .activity_col {
+    width: 22%;
+}
+
+.addr_col {
+    width: 60%;
+}
+.details_col{
+    width:10%;
+}
+.featurename_col {
+    width: 30%;
+}
+.featuredetail_col {
+    width: 8%;
+}
+.featureproject_col {
+    width: 20%;
+}
+.dates_col {
+    width: 12%;
+}
+.duedate_col {
+    width: 8%;
+}
+.mobileView{
+display:none;
+}
+.cursor{
+    cursor: pointer;
+}
+.pagination-info {
+    font-size: .8em;
+}
+.dataTables_info {
+    font-size: .8em;
+}
+td.linkColor {
+    color: #e95524;
+    cursor: pointer;
+}
+.linkColor {
+    color: #e95524;
+    cursor: pointer;
+}
+.lbl {
+    font-weight: bold;
+    font-size: .8em;
+}
+.txt {
+    font-size: .8em;
+}
+.dataTables_filter input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+}
+/*.centered-modal.show {
+    display: flex !important;
+}*/
+/*.centered-modal .modal-dialog {
+    width:50%;
+    max-height:75%;
+    margin: auto;
+}
+body.modal-open .modal {
+    display: flex !important;
+    height: 100%;
+}
+body.modal-open .modal .modal-dialog {
+        margin: auto;
+}*/
+.modal.fade.in modal-body {
+    bottom: 0;
+    opacity: 1;
+    z-index:5000;
+}
+.modal-body {
+    bottom: 25px;
+    margin: 150px auto 0;
+    padding: 40px;
+    max-width: 60%;
+    height: auto;
+    background-color: rgb(248, 250, 247);
+    border: 1px solid #BEBEBE;
+    -webkit-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+    transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+}
+.close {
+    margin-top: -20px;
+    margin-right: -20px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.select2-selection__rendered, .select2-hidden-accessible, .select2-results__options {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.select2 {
+    max-width: 100%;
+}
+.button-active {
+    background-color: #e95524;
+}
+.link-active {
+    color: #fff;
+}
+#workItem {
+    table-layout: fixed;
+}
+@media only screen and (min-width:768px) {
+    .header-height {
+        height: auto;
+    }
+    .map-table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .map-table-header,
+    .map-table-td {
+        font-size: .8em;
+        padding: 10px 0;
+    }
+    .chartWidth{
+        width:70%;
+    }
+}
+@media only screen and (max-width:767px) {
+    .chartWidth {
+        width: 80%;
+    }
+    .scrollimg {
+        width: 30px;
+        height: 20px;
+    }
+    .mobileView {
+        display: block;
+    }
+    input {
+        width: auto;
+    }
+    .space-between-zones {
+        display: none;
+    }
+
+    #table > thead {
+        display: none !important;
+    }
+
+    #table input {
+        text-align: center;
+    }
+
+    #table tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid #eceeef;
+        padding: 10px 0px;
+    }
+    #workItem > thead {
+        display: none !important;
+    }
+    #workItem tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid #eceeef;
+        padding: 10px 0px;
+    }
+   .bootstrap-table {
+        width: 100%;
+    }
+
+    #table tr td {
+        border: none;
+        text-align: center !important;
+    }
+
+    #table tr td:empty {
+        display: none;
+    }
+    #workItem tr td {
+        border: none;
+        text-align: center !important;
+    }
+
+    #workItem tr td:empty {
+        display: none;
+    }
+    tr.hidden-cell > .mobile-hide {
+        display: none;
+    }
+   
+    .fa-angle-down:before {
+        padding: 0 10px;
+    }
+
+    #mobile-table > thead {
+        display: none !important;
+    }
+
+    .bootstrap-table {
+        width: 100%;
+    }
+
+    tr:hover {
+        background-color: #fff !important;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #fff !important;
+    }
+
+    .table-bordered {
+        border: none;
+    }
+
+    td input {
+        text-align: center;
+    }
+
+    td:empty {
+        display: none !important;
+    }
+
+    tr td:nth-child(3) {
+        font-weight: bold;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fff;
+    }
+
+    .table-striped tbody tr:nth-of-type(even):hover {
+        background-color: #fff;
+    }
+
+    .page-item .page-link {
+        border: none;
+    }
+
+    .page-item .page-link:focus, .page-item .page-link:hover {
+        box-shadow: none;
+        color: #e95524;
+        background-color: #fff;
+    }
+
+    .bootstrap-table .fixed-table-pagination > .pagination ul.pagination li.disabled a {
+        color: #e95524;
+    }
 }

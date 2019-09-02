@@ -1,0 +1,65 @@
+a {
+    color: #e95524;
+}
+
+a:hover {
+    color: #e95524;
+}
+.error{
+color:red;
+font-size:120%;
+}
+.header-height {
+    height: auto;
+}
+.actionbtn {
+    background-color: #fff;
+    border: 1px solid #e75525;
+    color: #e75525;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.actionbtn:hover {
+    color: #fff;
+    background-color: #e75525;
+}
+.actionbtn {
+    padding: 5px;
+    width: 200px;
+}
+.actionText {
+    font-size: 18px;
+    line-height: 26px;
+}
+.flex-col {
+    flex-direction: column;
+    -webkit-flex-direction: column; /* NEW */
+    align-items: flex-start;
+    align-items: -webkit-flex-start;
+    text-align: left;
+    flex: 1 1 14em;
+    padding-left: 25px;
+}
+.ctaContainer {
+    display: flex;
+    display: -webkit-flex; /* NEW */
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap; /* NEW */
+    -webkit-flex-direction: row; /* NEW */
+    justify-content: space-between;
+    width: 80%;
+}
+.containerbtmPadding {
+    padding-bottom:50px;
+}
+.sectionShow{
+    display:block;
+}
+.sectionHide {
+    display: none;
+}
