@@ -6,7 +6,7 @@
           "Name":"FAAA Convention",
           "Date":"07/26/2019",
           "Description":"",
-          "File":"Assets/Files/Projects/FAAAConvention.pdf"
+          "File":"Assets/Files/projects/FAAAConvention.pdf"
         },
         {
           "Id":2,

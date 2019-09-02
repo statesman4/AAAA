@@ -96,10 +96,10 @@ var TransformEventData = function (results) {
                 search: ""
             },
             columnDefs: [
-                { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
+                { "width": "25%", className: "map-table-td", targets: 0 },
                 { "width": "15%", className: "map-table-td", targets: 1 },
-                { "width": "35%", className: "map-table-td", targets: 2 },
-                { "width": "25%", className: "map-table-td", targets: 3 }
+                { "width": "30%", className: "map-table-td", targets: 2 },
+                { "width": "30%", className: "map-table-td", targets: 3 }
             ],
             'columns': [
                 {
@@ -154,10 +154,10 @@ var TransformProjectData = function (results) {
               search: ""
           },
           columnDefs: [
-              { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
+              { "width": "25%", className: "map-table-td", targets: 0 },
               { "width": "15%", className: "map-table-td", targets: 1 },
-              { "width": "35%", className: "map-table-td", targets: 2 },
-              { "width": "25%", className: "map-table-td", targets: 3 }
+              { "width": "30%", className: "map-table-td", targets: 2 },
+              { "width": "30%", className: "map-table-td", targets: 3 }
           ],
           'columns': [
               {
@@ -190,7 +190,7 @@ var TransformGalleryData = function (results) {
           Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
-          Description: item['Description'],
+          Description: item['Description']
         });
   });
   $('#galleryItemDiv').removeClass('hidden');
@@ -211,7 +211,7 @@ var TransformGalleryData = function (results) {
             search: ""
         },
         columnDefs: [
-            { "width": "50%", className: "map-table-td mobile-hide", targets: 0 },
+            { "width": "50%", className: "map-table-td", targets: 0 },
             { "width": "20%", className: "map-table-td", targets: 1 },
             { "width": "30%", className: "map-table-td", targets: 2 }
         ],
@@ -241,12 +241,4 @@ function ItemDetails(file){
 }
 function GelleryDetails(Id) {
     //load all images that correspond to Id.
-}
-function escapeSpecialChars(jsonString) {
-
-    return jsonString.replace(/\n/g, "\\n")
-        .replace(/\r/g, "\\r")
-        .replace(/\t/g, "\\t")
-        .replace(/\f/g, "\\f");
-
 }
