@@ -153,7 +153,21 @@
               },
               {
                   "Path":"Assets/Files/gallery/katju/17.jpg"
+              }
+            ]
+        },
+        {
+            "Id":5,
+            "Name":"2017 Festival Of India",
+            "Date":"11/18/2017",
+            "Description":"",
+            "Images":[
+              {
+                  "Path":"Assets/Files/gallery/foi2017/1.JPG"
               },
+              {
+                  "Path":"Assets/Files/gallery/foi2017/2.jpg"
+              }
             ]
         }
     ]
