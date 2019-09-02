@@ -96,6 +96,65 @@
                   "Path":"Assets/Files/gallery/jamiavc/10.JPG"
               }
             ]
+        },
+        {
+            "Id":4,
+            "Name":"2017 Justice Katju Program",
+            "Date":"11/18/2017",
+            "Description":"",
+            "Images":[
+              {
+                  "Path":"Assets/Files/gallery/katju/1.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/2.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/3.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/4.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/5.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/6.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/7.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/8.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/9.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/10.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/11.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/12.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/13.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/14.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/15.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/16.jpg"
+              },
+              {
+                  "Path":"Assets/Files/gallery/katju/17.jpg"
+              },
+            ]
         }
     ]
  }
