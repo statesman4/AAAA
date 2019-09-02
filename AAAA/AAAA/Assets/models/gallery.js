@@ -58,6 +58,44 @@
                   "Path":"Assets/Files/gallery/2016mushaira/12.JPG"
               }
             ]
+        },
+        {
+            "Id":3,
+            "Name":"2017 Jamia VC Event",
+            "Date":"11/18/2017",
+            "Description":"",
+            "Images":[
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/1.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/2.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/3.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/4.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/5.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/6.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/7.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/8.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/9.JPG"
+              },
+              {
+                  "Path":"Assets/Files/gallery/jamiavc/10.JPG"
+              }
+            ]
         }
     ]
  }
