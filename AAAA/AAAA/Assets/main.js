@@ -17,7 +17,7 @@ function hitApi(url, callback) {
     if (req.status >= 400) {
       onFail(event);
     } else {
-      var json = JSON.parse(this.responseText);
+        var json = JSON.parse(this.responseText);
       callback(null, json);
     }
   }
@@ -241,4 +241,12 @@ function ItemDetails(file){
 }
 function GelleryDetails(Id) {
     //load all images that correspond to Id.
+}
+function escapeSpecialChars(jsonString) {
+
+    return jsonString.replace(/\n/g, "\\n")
+        .replace(/\r/g, "\\r")
+        .replace(/\t/g, "\\t")
+        .replace(/\f/g, "\\f");
+
 }
