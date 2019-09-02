@@ -211,21 +211,21 @@ var TransformGalleryData = function (results) {
             search: ""
         },
         columnDefs: [
-            { "width": "25%", className: "map-table-td mobile-hide", targets: 0 },
-            { "width": "15%", className: "map-table-td", targets: 1 },
-            { "width": "35%", className: "map-table-td", targets: 2 }
+            { "width": "50%", className: "map-table-td mobile-hide", targets: 0 },
+            { "width": "20%", className: "map-table-td", targets: 1 },
+            { "width": "30%", className: "map-table-td", targets: 2 }
         ],
         'columns': [
             {
-                'render': function (data, type, full, meta) {
-                    return '<a class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">' + full.Name + '</a>';
-                }
+                'data': 'Name'
             },
             {
                 'data': 'Date'
             },
             {
-                'data': 'Description'
+                'render': function (data, type, full, meta) {
+                    return '<a class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">Picture Gallery</a>';
+                }
             }
         ],
         createdRow: function (row, data, dataIndex) {
