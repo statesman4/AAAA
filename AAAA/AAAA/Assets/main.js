@@ -112,8 +112,12 @@ var TransformEventData = function (results) {
                     'data': 'Description'
                 },
                 {
-                  'render': function (data, type, full, meta) {
-                      return '<a class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
+                    'render': function (data, type, full, meta) {
+                        if (full.FileName === "") {
+                            return full.FileName;
+                        } else {
+                            return '<a href class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</a>';
+                        }
                 }
               },
               
@@ -171,11 +175,14 @@ var TransformProjectData = function (results) {
               },
               {
                   'render': function (data, type, full, meta) {
-                      return '<a class="linkColor" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.FileName + '</a>';
+                      if (full.FileName === "") {
+                          return full.FileName;
+                      } else {
+                          return '<a href class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</a>';
+                      }
                   }
-              },
-
-          ],
+              }
+            ],
           createdRow: function (row, data, dataIndex) {
               $(row).addClass('line-on-bottom hidden-cell');
           }
@@ -224,7 +231,7 @@ var TransformGalleryData = function (results) {
             },
             {
                 'render': function (data, type, full, meta) {
-                    return '<a class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">Picture Gallery</a>';
+                    return '<a href class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">Picture Gallery</a>';
                 }
             }
         ],
