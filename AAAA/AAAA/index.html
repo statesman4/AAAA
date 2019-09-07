@@ -3,7 +3,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="Cache-Control" content="max-age=200" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Natural Gas from Gas South: A Georgia Natural Gas Provider</title>
+        <title>Aligarh Alumni Association of Atlanta</title>
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="Assets/External//Content/bootstrap.min.css">
         <link rel="stylesheet" href="Assets/External/Content/bootstrap-table.min.css">
@@ -279,13 +279,16 @@
                                 </div>
                             </div>
                             <div class="row col-xl-10 col-lg-10 col-md-10 col-sm-11 col-xs-12">
-                                <div class='container focus'>
+                                <div id="emailsuccessform" class='container focus hidden'>
+                                    <h3 class="error">Thank you for sending us an Email!</h3>
+                                </div>
+                                <div id="emailform" class='container focus'>
                                     <h3>Leave us a note!</h3>
                                     <p>Go ahead, write something. Send it, and we will contact soon.</p>
                                     <form action="http://www.fatcow.com/scripts/formemail.bml" method="Post">
                                         <input type="hidden" name="my_email" value="nadeem@inacomm.com">
-                                        <input type="hidden" name="thankyou_url" value="http://www.InaComm.com?email">
-                                        <input type="hidden" name="subject" value="form submission from %%fullname%%">
+                                        <input type="hidden" name="thankyou_url" value="http://localhost:60308/index.html?section=contact&email=success">
+                                        <input type="hidden" name="subject" value="Email From %%name%%">
                                         <div class="form-group">
                                             <label for="email"><strong>Name</strong></label>
                                             <input type="name" class="form-control" id="name">
@@ -383,8 +386,31 @@
                             <div class="clearfix">&nbsp;</div>
                             <div class="clearfix">&nbsp;</div>
                         </div>
-                        <div id="gallerydetails" class="row hideSection">
-                            Coming Soon
+                        <div id="gallerydetails" class="row hidden">
+                            <h4 id="selectedGalleryName" style="margin: 0 auto;padding-bottom:5px;">Picture Gallery</h4>
+                            <div class="row col-12" style="padding-bottom:20px;left:10%;text-align:center;">Click on the image to see the larger version, if available.</div>
+                            <div class="imgRow">
+                                <div class="imgColumn" id="galleryimages"></div>
+                            </div>
+                            <div id="noImages" class="hidden">
+                                <p class="error">There are no images associated with this event</p>
+                            </div>
+                        </div>
+                        <!-- Creates the bootstrap modal where the image will appear -->
+                        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="" id="imagepreview" class="img-responsive">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--PROJECTS-->
@@ -484,8 +510,10 @@
             function loadSection() {
                 var vars = getUrlVars();
                 var section = "home";
+                var email = "";
                 if (vars !== null && vars !== undefined) {
                     section = getUrlVars()["section"];
+                    email = getUrlVars()["email"];
                 }
                 $('#home').addClass('hideSection');
                 $('#aboutUs').addClass('hideSection');
@@ -493,12 +521,20 @@
                 $('#events').addClass('hideSection');
                 $('#gallery').addClass('hideSection');
                 $('#projects').addClass('hideSection');
+                
                 switch (section) {
                     case "home":
                         $('#home').removeClass('hideSection');
                         break;
                     case "contact":
                         $('#contactUs').removeClass('hideSection');
+                        if (email !== ""){
+                            $('#emailsuccessform').removeClass('hidden');
+                            $('#emailform').addClass('hidden');
+                        } else {
+                            $('#emailsuccessform').addClass('hidden');
+                            $('#emailform').removeClass('hidden');
+                        }
                         break;
                     case "aboutus":
                         $('#aboutUs').removeClass('hideSection');
@@ -519,6 +555,21 @@
                         $('#home').removeClass('hideSection');
                 }
             }
+            function openModalImage(id) {
+                var img = document.getElementById(id);
+                //or however you get a handle to the IMG
+                var width = img.naturalWidth;
+                var height = img.naturalHeight;
+                //alert(width + ' ' + height);
+                $('#imagepreview').attr('src', $('#' + id).attr('src')); // here asign the image to the modal when the user click the enlarge link
+                if (width >= 500 && window.innerWidth > 500) {
+                    $('#imagepreview').addClass('biggerImage');
+                } else {
+                    $('#imagepreview').addClass('smallerImage');
+                    $('#imagepreview').removeClass('biggerImage');
+                }
+                $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+            };
             // Read a page's GET URL variables and return them as an associative array.
             function getUrlVars() {
                 var vars = [], hash;
@@ -535,6 +586,7 @@
                 //alert(url);
                 window.location = url;
             }
+            
             /**
             * detect IE
             * returns version of IE or false, if browser is not Internet Explorer

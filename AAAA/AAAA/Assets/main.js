@@ -1,6 +1,6 @@
 var Events = [];
 var Projects = [];
-var Galleries = [];
+var PictureGalleries = [];
 var baseUrl = "https://statesman4.github.io/AAAA/AAAA/AAAA";
 
 function hitApi(url, callback) {
@@ -116,7 +116,7 @@ var TransformEventData = function (results) {
                         if (full.FileName === "") {
                             return full.FileName;
                         } else {
-                            return '<a href class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</a>';
+                            return '<span class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</span>';
                         }
                 }
               },
@@ -178,7 +178,7 @@ var TransformProjectData = function (results) {
                       if (full.FileName === "") {
                           return full.FileName;
                       } else {
-                          return '<a href class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</a>';
+                          return '<span class="customLink" onClick = "ItemDetails(\'' + full.FileName + '\')">' + full.Name + '</span>';
                       }
                   }
               }
@@ -190,23 +190,26 @@ var TransformProjectData = function (results) {
   //return Projects;
 };
 var TransformGalleryData = function (results) {
-  Galleries = [];
+  PictureGalleries = [];
   totalRecords = results.galleries.length;
   $.each(results.galleries, function (i, item) {
-    Galleries.push({
+      PictureGalleries.push({
           Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
-          Description: item['Description']
+          Description: item['Description'],
+          Images:item["Images"]
         });
   });
   $('#galleryItemDiv').removeClass('hidden');
+  $('#noImages').addClass('hidden');
+  //$('#gallerydetails').addClass('hidden');
   if ($.fn.dataTable.isDataTable('#galleryItem')) {
       $('#galleryItem').DataTable().destroy();
   }
     $('#galleryItem')
     .DataTable({
-        data: Galleries,
+        data: PictureGalleries,
         "paging": true,
         "ordering": true,
         "order": [[0, "desc"]],
@@ -231,7 +234,7 @@ var TransformGalleryData = function (results) {
             },
             {
                 'render': function (data, type, full, meta) {
-                    return '<a href class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">Picture Gallery</a>';
+                    return '<span class="linkColor" onClick = "GelleryDetails(\'' + full.Id + '\')">Picture Gallery</span>';
                 }
             }
         ],
@@ -239,7 +242,7 @@ var TransformGalleryData = function (results) {
             $(row).addClass('line-on-bottom hidden-cell');
         }
     });
-  return Galleries;
+    return PictureGalleries;
 };
 function ItemDetails(file){
   if (file !== "") {
@@ -247,5 +250,24 @@ function ItemDetails(file){
   }
 }
 function GelleryDetails(Id) {
-    //load all images that correspond to Id.
+
+    $('#gallerydetails').removeClass('hidden');
+    $('#galleryimages img').remove();
+    var selectedGallery = $.grep(PictureGalleries, function (e) {
+        return e.Id.toString() === Id.toString();
+    });
+    if (selectedGallery.length === "") {
+        $('#noImages').removeClass('hidden');
+    } else {
+        $('#selectedGalleryName').text(selectedGallery[0].Name);
+        $.each(selectedGallery, function (i, item) {
+            if (item.Images && item.Images.length > 0) {
+                $.each(item.Images, function (y, img) {
+                    $('#galleryimages').prepend('<img id="' + parseInt(y) + parseInt(1) + '" src="' + img.Path + '" class="smallerImage" onClick="openModalImage(\'' + parseInt(y) + parseInt(1) + '\');"/>')
+                });
+            } else {
+                $('#noImages').removeClass('hidden');
+            }
+        });
+    }
 }

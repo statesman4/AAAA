@@ -127,13 +127,13 @@ body.modal-open .modal .modal-dialog {
     z-index:5000;
 }
 .modal-body {
-    bottom: 25px;
-    margin: 150px auto 0;
-    padding: 40px;
-    max-width: 60%;
+    bottom: 20px;
+    margin: 20px auto 0;
+    padding: 20px;
+    max-width: 80%;
     height: auto;
-    background-color: rgb(248, 250, 247);
-    border: 1px solid #BEBEBE;
+    /*background-color: rgb(248, 250, 247);
+    border: 1px solid #BEBEBE;*/
     -webkit-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
     -moz-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;

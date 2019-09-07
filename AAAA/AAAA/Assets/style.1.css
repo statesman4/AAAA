@@ -442,6 +442,35 @@ a#top {
   font-size: 14px; 
   font-weight: 300;
 }
+.imgRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+/* Create two equal columns that sits next to each other */
+.imgColumn {
+    flex: 50%;
+    padding: 4px;
+ }
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.smallerImage {
+   height:200px;
+   width:200px;
+   padding-right:2px;
+}
+.biggerImage {
+    width:500px;
+    height:500px;
+}
  @media screen and (max-width:1220px){
     
     .topMenu{
