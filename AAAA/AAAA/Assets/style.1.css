@@ -469,7 +469,11 @@ a#top {
 }
 .biggerImage {
     width:500px;
-    height:500px;
+    height:auto;
+}
+.biggerImage2 {
+  width:650px;
+  height:auto;
 }
  @media screen and (max-width:1220px){
     

@@ -287,7 +287,7 @@
                                     <p>Go ahead, write something. Send it, and we will contact soon.</p>
                                     <form action="http://www.fatcow.com/scripts/formemail.bml" method="Post">
                                         <input type="hidden" name="my_email" value="nadeem@inacomm.com">
-                                        <input type="hidden" name="thankyou_url" value="http://localhost:60308/index.html?section=contact&email=success">
+                                        <input type="hidden" name="thankyou_url" value="http://aligarhassociation.org/index.html?section=contact&email=success">
                                         <input type="hidden" name="subject" value="Email From %%name%%">
                                         <div class="form-group">
                                             <label for="email"><strong>Name</strong></label>
@@ -562,7 +562,10 @@
                 var height = img.naturalHeight;
                 //alert(width + ' ' + height);
                 $('#imagepreview').attr('src', $('#' + id).attr('src')); // here asign the image to the modal when the user click the enlarge link
-                if (width >= 500 && window.innerWidth > 500) {
+                if (width >= 650 && window.innerWidth > 600) {
+                    $('#imagepreview').addClass('biggerImage2');
+                }
+                else if (width >= 500 && window.innerWidth > 500) {
                     $('#imagepreview').addClass('biggerImage');
                 } else {
                     $('#imagepreview').addClass('smallerImage');
