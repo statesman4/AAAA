@@ -137,6 +137,7 @@
     <Content Include="Assets\External\Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Assets\External\Scripts\bootstrap.js.map" />
     <Content Include="Assets\External\Scripts\bootstrap.min.js.map" />
+    <Content Include="Assets\External\Scripts\emailsubmission.js" />
     <Content Include="Assets\External\Scripts\esm\popper-utils.js.map" />
     <Content Include="Assets\External\Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Assets\External\Scripts\esm\popper.js.map" />
@@ -1800,6 +1801,7 @@
     <Content Include="Assets\style.1.css" />
     <Content Include="Assets\style.2.css" />
     <Content Include="Assets\style.css" />
+    <Content Include="contact.php" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Web.config" />
