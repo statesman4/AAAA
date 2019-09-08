@@ -7,7 +7,7 @@
           "Name":"FAAA Convention",
           "Date":"07/26/2019",
           "Description":"",
-          "File":"Assets/Files/events/FAAAConvention.pdf"
+          "File":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/events/FAAAConvention.pdf"
         },
         {
           "Id":2,
