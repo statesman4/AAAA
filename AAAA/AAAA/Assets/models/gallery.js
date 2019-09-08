@@ -8,10 +8,10 @@
           "Description":"",
           "Images":[
             {
-              "Path":"Assets/Files/gallery/mercer/mercer1.jpg"
+              "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/mercer/f1.jpg"
             },
             {
-              "Path":"Assets/Files/gallery/mercer/mercer2.jpg"
+              "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/mercer/f2.jpg"
             }
           ]
         },
@@ -22,40 +22,40 @@
             "Description":"",
             "Images":[
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/1.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f1.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/2.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f2.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/3.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f3.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/4.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f4.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/5.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f5.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/6.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f6.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/7.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f7.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/8.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f8.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/9.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f9.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/10.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f10.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/11.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f11.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/2016mushaira/12.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/2016mushaira/f12.jpg"
               }
             ]
         },
@@ -66,34 +66,34 @@
             "Description":"",
             "Images":[
               {
-                  "Path":"Assets/Files/gallery/jamiavc/1.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f1.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/2.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f2.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/3.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f3.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/4.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f4.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/5.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f5.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/6.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f6.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/7.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f7.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/8.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f8.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/9.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f9.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/jamiavc/10.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/jamiavc/f10.jpg"
               }
             ]
         },
@@ -104,55 +104,55 @@
             "Description":"",
             "Images":[
               {
-                  "Path":"Assets/Files/gallery/katju/1.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f1.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/2.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f2.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/3.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f3.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/4.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f4.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/5.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f5.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/6.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f6.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/7.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f7.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/8.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f8.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/9.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f9.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/10.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f10.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/11.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f11.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/12.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f12.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/13.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f13.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/14.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f14.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/15.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f15.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/16.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f16.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/katju/17.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/katju/f17.jpg"
               }
             ]
         },
@@ -163,10 +163,10 @@
             "Description":"",
             "Images":[
               {
-                  "Path":"Assets/Files/gallery/foi2017/1.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/foi2017/f1.jpg"
               },
               {
-                  "Path":"Assets/Files/gallery/foi2017/2.jpg"
+                  "Path":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/gallery/foi2017/f2.jpg"
               }
             ]
         }
