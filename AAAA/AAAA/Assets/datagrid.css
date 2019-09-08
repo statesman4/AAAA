@@ -160,6 +160,12 @@ body.modal-open .modal .modal-dialog {
 #galleryItem {
     table-layout: fixed;
 }
+#eventItem {
+    table-layout: fixed;
+}
+#projectItem {
+    table-layout: fixed;
+}
 @media only screen and (min-width:768px) {
     .header-height {
         height: auto;
@@ -218,6 +224,26 @@ body.modal-open .modal .modal-dialog {
         border-bottom: 3px solid #eceeef;
         padding: 10px 0px;
     }
+    #eventItem > thead {
+        display: none !important;
+    }
+
+    #eventItem tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid #eceeef;
+        padding: 10px 0px;
+    }
+    #projectItem > thead {
+        display: none !important;
+    }
+
+    #projectItem tr {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid #eceeef;
+        padding: 10px 0px;
+    }
    .bootstrap-table {
         width: 100%;
     }
@@ -236,6 +262,20 @@ body.modal-open .modal .modal-dialog {
     }
 
     #galleryItem tr td:empty {
+        display: none;
+    }
+    #eventItem tr td {
+        border: none;
+        text-align: center !important;
+    }
+    #eventItem tr td:empty {
+        display: none;
+    }
+    #projectItem tr td {
+        border: none;
+        text-align: center !important;
+    }
+    #projectItem tr td:empty {
         display: none;
     }
     tr.hidden-cell > .mobile-hide {
