@@ -96,20 +96,16 @@ var TransformEventData = function (results) {
                 search: ""
             },
             columnDefs: [
-                { "width": "25%", className: "map-table-td", targets: 0 },
-                { "width": "15%", className: "map-table-td", targets: 1 },
+                { "width": "50%", className: "map-table-td", targets: 0 },
+                { "width": "20%", className: "map-table-td", targets: 1 },
                 { "width": "30%", className: "map-table-td", targets: 2 },
-                { "width": "30%", className: "map-table-td", targets: 3 }
-            ],
+              ],
             'columns': [
                 {
                     'data': 'Name'
                 },
                 {
                     'data': 'Date'
-                },
-                {
-                    'data': 'Description'
                 },
                 {
                     'render': function (data, type, full, meta) {
@@ -158,10 +154,9 @@ var TransformProjectData = function (results) {
               search: ""
           },
           columnDefs: [
-              { "width": "25%", className: "map-table-td", targets: 0 },
-              { "width": "15%", className: "map-table-td", targets: 1 },
-              { "width": "30%", className: "map-table-td", targets: 2 },
-              { "width": "30%", className: "map-table-td", targets: 3 }
+              { "width": "50%", className: "map-table-td", targets: 0 },
+              { "width": "20%", className: "map-table-td", targets: 1 },
+              { "width": "30%", className: "map-table-td", targets: 2 }
           ],
           'columns': [
               {
@@ -169,9 +164,6 @@ var TransformProjectData = function (results) {
               },
               {
                   'data': 'Date'
-              },
-              {
-                  'data': 'Description'
               },
               {
                   'render': function (data, type, full, meta) {
