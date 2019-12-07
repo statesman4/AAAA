@@ -7,7 +7,7 @@
           "Name":"Annual Mushaira - 2019",
           "Date":"11/08/2019",
           "Description":"",
-          "File":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/events/Mushaira2019.pdf",
+          "File":"https://drive.google.com/open?id=1YXd6SKT_9heQaVUIMob3rwO57JxHiF32",
           "Images":[]
         },
         {
@@ -15,7 +15,7 @@
           "Name":"FAAA Convention",
           "Date":"07/26/2019",
           "Description":"",
-          "File":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/events/FAAAConvention.pdf",
+          "File":"https://drive.google.com/open?id=16qF3j9TxDYoQi3eImUNhPOR3mTsFvvLn",
           "Images":[
             {
               "Path":"https://youtu.be/pSdVDLmJuNI",
