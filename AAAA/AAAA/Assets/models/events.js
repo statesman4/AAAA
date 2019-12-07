@@ -7,21 +7,42 @@
           "Name":"FAAA Convention",
           "Date":"07/26/2019",
           "Description":"",
-          "File":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/events/FAAAConvention.pdf"
+          "File":"https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/Files/events/FAAAConvention.pdf",
+          "Images":[
+            {
+              "Path":"https://youtu.be/pSdVDLmJuNI"
+            },
+            {
+              "Path":"https://youtu.be/_kuoE5C6mcU"
+            },
+            {
+              "Path":"https://youtu.be/R4b65XCD3ck"
+            },
+            {
+              "Path":"https://youtu.be/fAILe193UIU"
+            },
+            {
+              "Path":"https://youtu.be/VRfL_a60Ock"
+            },
+            {
+              "Path":"https://youtu.be/PFfZVYsNP6E"
+            }
         },
         {
           "Id":2,
           "Name":"Annual Mushaira - 2018",
           "Date":"11/17/2018",
           "Description":"",
-          "File":""
+          "File":"",
+          "Images":[]
         },
         {
           "Id":3
           ,"Name":"Annual Mushaira - 2017",
           "Date":"12/02/2017",
           "Description":"",
-          "File":""
+          "File":"",
+          "Images":[]
         }
       ]
     }

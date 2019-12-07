@@ -75,7 +75,8 @@ var TransformEventData = function (results) {
           Name: item["Name"],
           Date: item['Date'],
           Description: item['Description'],
-          FileName: item['File']
+          FileName: item['File'],
+          FileName: item['Images']
       });
   });
   $('#eventItemsDiv').removeClass('hidden');
@@ -96,9 +97,10 @@ var TransformEventData = function (results) {
                 search: ""
             },
             columnDefs: [
-                { "width": "50%", className: "map-table-td", targets: 0 },
+                { "width": "40%", className: "map-table-td", targets: 0 },
                 { "width": "20%", className: "map-table-td", targets: 1 },
-                { "width": "30%", className: "map-table-td", targets: 2 },
+                { "width": "20%", className: "map-table-td", targets: 2 },
+                { "width": "20%", className: "map-table-td", targets: 3 }
               ],
             'columns': [
                 {
@@ -116,7 +118,11 @@ var TransformEventData = function (results) {
                         }
                 }
               },
-              
+              {
+                'render': function (data, type, full, meta) {
+                    return '<span class="linkColor" onClick = "EventDetails(\'' + full.Id + '\')">Gallery</span>';
+                }
+              }
             ],
             createdRow: function (row, data, dataIndex) {
                 $(row).addClass('line-on-bottom hidden-cell');
@@ -133,7 +139,7 @@ var TransformProjectData = function (results) {
           Name: item["Name"],
           Date: item['Date'],
           Description: item['Description'],
-          FileName: item['File']
+          FileName: item['File']          
       });
   });
   $('#projectItemDiv').removeClass('hidden');
@@ -240,6 +246,30 @@ function ItemDetails(file){
   if (file !== "") {
     window.open(file, "_blank");
   }
+}
+function EventDetails(file){
+  /* if (file !== "") {
+    window.open(file, "_blank");
+  } */
+  $('#eventdetails').removeClass('hidden');
+    $('#eventimages img').remove();
+    var selectedEvent = $.grep(Events, function (e) {
+        return e.Id.toString() === Id.toString();
+    });
+    if (selectedEvent.length === "") {
+        $('#noEventImages').removeClass('hidden');
+    } else {
+        $('#selectedEventName').text(selectedEvent[0].Name);
+        $.each(selectedEvent, function (i, item) {
+            if (item.Images && item.Images.length > 0) {
+                $.each(item.Images, function (y, img) {
+                    $('#eventimages').prepend('<a href="' + img.Path + '"_blank">' + img.Path + '/>')
+                });
+            } else {
+                $('#noEventImages').removeClass('hidden');
+            }
+        });
+    }
 }
 function GelleryDetails(Id) {
 
