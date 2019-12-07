@@ -100,9 +100,9 @@
                         <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('gallery');">Gallery</a>
                         </div>
-                        <!-- <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
-                            <a class="transform cursor" onclick="getBaseUrl('projects');">Projects</a>
-                        </div>-->
+                        <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
+                            <a class="transform cursor" onclick="getBaseUrl('publications');">Publications</a>
+                        </div>
                         <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('contact');">Contact Us</a>
                         </div>
@@ -127,7 +127,7 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('events');">Events</a>
                                 <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('gallery');">Gallery</a>
-                               <!--  <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('projects');">Projects</a> -->
+                                <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('publications');">Publications</a>
                                 <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('contact');">Contact Us</a>
                                 <a class="dropdown-item dropdownMenu cursor" onclick="getBaseUrl('aboutus');">About Us</a>
                             </div>
@@ -366,10 +366,10 @@
                         <div id="eventdetails" class="row hidden">
                             <h4 id="selectedEventName" style="margin: 0 auto;padding-bottom:5px;" class="contentText">Picture & Video Gallery</h4>
                             <div class="row col-12 contentText" style="padding-bottom:20px;left:10%;text-align:center;">Click on the link below to see event pictures/videos.</div>
-                            <div class="imgRow">
+                            <div class="row col-12" style="text-align:center;margin:0 auto;" id="eventDetailImages">
                                 <div class="imgColumn" id="eventimages"></div>
                             </div>
-                            <div id="noEventImages" class="hidden">
+                            <div id="noEventImages" class="hidden" style="text-align:center;margin:0 auto;">
                                 <p class="error">There are no images associated with this event</p>
                             </div>
                         </div>
@@ -425,24 +425,24 @@
                             </div>
                         </div>
                     </div>
-                    <!--PROJECTS-->
-                    <div id="projects">
+                    <!--PUBLICATIONS-->
+                    <div id="publications">
                         <div class="topContainer">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="contentText" style="padding-left:10px;padding-top:40px;">
                                     <p class="secondHeading">
-                                        <strong>AAAA Projects</strong>
+                                        <strong>AAAA Publications</strong>
                                     </p>
                                 </div>
                             </div>
-                            <div id="projectItemDiv" class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-12 justify-content-md-center overflow-hide hidden">
-                                <table class="table table-hover table-striped table-sm" style="width:100%;" id="projectItem">
+                            <div id="publicationItemDiv" class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-12 justify-content-md-center overflow-hide hidden">
+                                <table class="table table-hover table-striped table-sm" style="width:100%;" id="publicationItem">
                                     <thead>
                                         <tr class="line-on-bottom hidden-cell">
                                             <th class="map-table-header text-left">Name</th>
                                             <th class="map-table-header text-left">Date</th>
                                             <!-- <th class="map-table-header text-left">Description</th> -->
-                                            <th class="map-table-header text-left">Project Details</th>
+                                            <th class="map-table-header text-left">Magazine Details</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -468,9 +468,9 @@
                         <div class="footerText col-auto">
                             <a class="footerLink cursor" onclick="getBaseUrl('gallery');">Gallery</a>
                         </div>
-                        <!-- <div class=" footerText col-auto">
-                            <a class="footerLink cursor" onclick="getBaseUrl('projects');">Projects</a>
-                        </div> -->
+                        <div class=" footerText col-auto">
+                            <a class="footerLink cursor" onclick="getBaseUrl('publications');">Publications</a>
+                        </div>
                         <div class="footerText col-auto">
                             <a class="footerLink cursor" onclick="getBaseUrl('contact');">Contact Us</a>
                         </div>
@@ -503,7 +503,7 @@
         <script src="https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/External/Scripts/bootstrap-table-min.js"></script>
         <script type="text/javascript" src="https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/External/Scripts/datatables.min.js"></script>
         <script type="text/javascript" src="https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/External/Scripts/emailsubmission.js"></script>
-        <script type="text/javascript" src="https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/main.js"></script>
+        <script type="text/javascript" src="Assets/main.js"></script>
         <script type="text/javascript">
             var toper = $('a#top');
 
@@ -536,7 +536,7 @@
                 $('#contactUs').addClass('hideSection');
                 $('#events').addClass('hideSection');
                 $('#gallery').addClass('hideSection');
-                $('#projects').addClass('hideSection');
+                $('#publications').addClass('hideSection');
                 //alert(email);
                 switch (section) {
                     case "home":
@@ -563,9 +563,9 @@
                         $('#gallery').removeClass('hideSection');
                         GetGalleries();
                         break;
-                    case "projects":
-                        $('#projects').removeClass('hideSection');
-                        GetProjects();
+                    case "publications":
+                        $('#publications').removeClass('hideSection');
+                        GetPublications();
                         break;
                     default:
                         $('#home').removeClass('hideSection');
@@ -602,6 +602,7 @@
             }
             function getBaseUrl(section) {
                 var url = document.location.origin + "/index.html?section=" + section;
+                url = "index.html?section=" + section;
                 //alert(url);
                 window.location = url;
             }
