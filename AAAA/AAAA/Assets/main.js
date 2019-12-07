@@ -2,7 +2,7 @@ var Events = [];
 var Publications = [];
 var PictureGalleries = [];
 var baseUrl = "https://statesman4.github.io/AAAA/AAAA/AAAA";
-baseUrl = "http://127.0.0.1:5500/AAAA";
+//baseUrl = "http://127.0.0.1:5500/AAAA";
 
 function hitApi(url, callback) {
   var req = new XMLHttpRequest();
