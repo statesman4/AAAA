@@ -1,7 +1,8 @@
 var Events = [];
-var Projects = [];
+var Publications = [];
 var PictureGalleries = [];
 var baseUrl = "https://statesman4.github.io/AAAA/AAAA/AAAA";
+baseUrl = "http://127.0.0.1:5500/AAAA";
 
 function hitApi(url, callback) {
   var req = new XMLHttpRequest();
@@ -35,8 +36,8 @@ var GetEventsFromAPI = function(){
     }
   });
 }
-var GetProjectsFromAPI = function(){
-  hitApi(baseUrl + "/Assets/models/projects.js", function(error, data) {
+var GetPublicationsFromAPI = function(){
+  hitApi(baseUrl + "/Assets/models/publications.js", function(error, data) {
     if (error) {
       LoadingError(error);
     } else {
@@ -56,8 +57,8 @@ var GetGalleriesFromAPI = function(){
 function GetEvents(){
   GetEventsFromAPI()
 }
-function GetProjects(){
-  GetProjectsFromAPI();
+function Getpublications(){
+  GetPublicationsFromAPI();
 }
 function GetGalleries(){
   GetGalleriesFromAPI();
@@ -130,11 +131,11 @@ var TransformEventData = function (results) {
         });
   //return Events;
 };
-var TransformProjectData = function (results) {
-  Projects = [];
-  totalRecords = results.projects.length;
-  $.each(results.projects, function (i, item) {
-    Projects.push({
+var TransformPublicationData = function (results) {
+  Publications = [];
+  totalRecords = results.publications.length;
+  $.each(results.publications, function (i, item) {
+    Publications.push({
           Id: item["Id"],
           Name: item["Name"],
           Date: item['Date'],
@@ -142,13 +143,13 @@ var TransformProjectData = function (results) {
           FileName: item['File']          
       });
   });
-  $('#projectItemDiv').removeClass('hidden');
-  if ($.fn.dataTable.isDataTable('#projectItem')) {
-      $('#projectItem').DataTable().destroy();
+  $('#publicationItemDiv').removeClass('hidden');
+  if ($.fn.dataTable.isDataTable('#publicationItem')) {
+      $('#publicationItem').DataTable().destroy();
   }
-    $('#projectItem')
+    $('#publicationItem')
       .DataTable({
-          data: Projects,
+          data: Publications,
           "paging": true,
           "ordering": true,
           "order": [[0, "desc"]],
@@ -185,7 +186,7 @@ var TransformProjectData = function (results) {
               $(row).addClass('line-on-bottom hidden-cell');
           }
       });
-  //return Projects;
+  //return Publications;
 };
 var TransformGalleryData = function (results) {
   PictureGalleries = [];
@@ -252,7 +253,7 @@ function EventDetails(Id){
     window.open(file, "_blank");
   } */
   $('#eventdetails').removeClass('hidden');
-    $('#eventimages img').remove();
+  $('#eventimages img').remove();
     var selectedEvent = $.grep(Events, function (e) {
         return e.Id.toString() === Id.toString();
     });
@@ -262,11 +263,15 @@ function EventDetails(Id){
         $('#selectedEventName').text(selectedEvent[0].Name);
         $.each(selectedEvent, function (i, item) {
             if (item.Images && item.Images.length > 0) {
+              $('#eventimages').removeClass('hidden');
+              $('#noEventImages').addClass('hidden');
+              $('#eventimages').empty();
                 $.each(item.Images, function (y, img) {
-                    $('#eventimages').prepend('<a href="' + img.Path + '"_blank">' + img.Path + '/>')
+                    $('#eventimages').prepend('<a href="' + img.Path + '" target="_blank">' + img.Display + '</a>')
                 });
             } else {
                 $('#noEventImages').removeClass('hidden');
+                $('#eventimages').addClass('hidden');
             }
         });
     }
