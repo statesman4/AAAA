@@ -76,7 +76,7 @@ var TransformEventData = function (results) {
           Date: item['Date'],
           Description: item['Description'],
           FileName: item['File'],
-          FileName: item['Images']
+          Images: item['Images']
       });
   });
   $('#eventItemsDiv').removeClass('hidden');
@@ -119,7 +119,7 @@ var TransformEventData = function (results) {
                 }
               },
               {
-                'render': function (data, type, full, meta) {
+                   'render': function (data, type, full, meta) {
                     return '<span class="linkColor" onClick = "EventDetails(\'' + full.Id + '\')">Gallery</span>';
                 }
               }
@@ -247,7 +247,7 @@ function ItemDetails(file){
     window.open(file, "_blank");
   }
 }
-function EventDetails(file){
+function EventDetails(Id){
   /* if (file !== "") {
     window.open(file, "_blank");
   } */
