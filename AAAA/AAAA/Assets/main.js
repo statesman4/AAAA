@@ -41,7 +41,7 @@ var GetPublicationsFromAPI = function(){
     if (error) {
       LoadingError(error);
     } else {
-      TransformProjectData(data);
+      TransformPublicationData(data);
     }
   });
 }
