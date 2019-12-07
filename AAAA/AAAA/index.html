@@ -94,19 +94,19 @@
                         </div>
                     </div>
                     <div class="row col-xl-8 col-lg-7 col-md-7 col-sm-7 col-9 bottomContainer" style="height:20px;">
-                        <div class="normalfont headerLink" style="margin-left:20px;margin-top:12px;margin-right:10px;">
+                        <div id="lnkEvent" class="normalfont headerLink" style="margin-left:20px;margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('events');">Events</a>
                         </div>
-                        <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
+                        <div id="lnkGallery" class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('gallery');">Gallery</a>
                         </div>
-                        <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
+                        <div id="lnkPubs" class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('publications');">Publications</a>
                         </div>
-                        <div class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
+                        <div id="lnkContact" class="normalfont headerLink" style="margin-top:12px;margin-right:10px;">
                             <a class="transform cursor" onclick="getBaseUrl('contact');">Contact Us</a>
                         </div>
-                        <div class="normalfont headerLink" style="margin-top:12px;">
+                        <div id="lnkAbout" class="normalfont headerLink" style="margin-top:12px;">
                             <a class="cursor" onclick="getBaseUrl('aboutus');">About Us</a>
                         </div>
                         <div class="normalfont" style="margin-top:12px;width:20%;">&nbsp;</div>
@@ -537,6 +537,12 @@
                 $('#events').addClass('hideSection');
                 $('#gallery').addClass('hideSection');
                 $('#publications').addClass('hideSection');
+
+                $('#lnkContact').removeClass('linkBackColor');
+                $('#lnkAbout').removeClass('linkBackColor');
+                $('#lnkEvent').removeClass('linkBackColor');
+                $('#lnkGallery').removeClass('linkBackColor');
+                $('#lnkPubs').removeClass('linkBackColor');
                 //alert(email);
                 switch (section) {
                     case "home":
@@ -544,6 +550,7 @@
                         break;
                     case "contact":
                         $('#contactUs').removeClass('hideSection');
+                        $('#lnkContact').addClass('linkBackColor');
                         if (email !== "" && email !== undefined){
                             $('#emailsuccessform').removeClass('hidden');
                             $('#emailform').addClass('hidden');
@@ -554,17 +561,21 @@
                         break;
                     case "aboutus":
                         $('#aboutUs').removeClass('hideSection');
+                        $('#lnkAbout').addClass('linkBackColor');
                         break;
                     case "events":
                         $('#events').removeClass('hideSection');
+                        $('#lnkEvent').addClass('linkBackColor');
                         GetEvents();
                         break;
                     case "gallery":
                         $('#gallery').removeClass('hideSection');
+                        $('#lnkGallery').addClass('linkBackColor');
                         GetGalleries();
                         break;
                     case "publications":
                         $('#publications').removeClass('hideSection');
+                        $('#lnkPubs').addClass('linkBackColor');
                         GetPublications();
                         break;
                     default:
