@@ -57,7 +57,7 @@ var GetGalleriesFromAPI = function(){
 function GetEvents(){
   GetEventsFromAPI()
 }
-function Getpublications(){
+function GetPublications(){
   GetPublicationsFromAPI();
 }
 function GetGalleries(){
