@@ -184,6 +184,9 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-12">
+                                     <h3>Upcoming Event</h3>&nbsp;<button class="btn btn-success large" onclick="getBaseUrl('upcomingevent');">SUKHAN - 2020</button>
+                                    </div>
                                     <img src="https://statesman4.github.io/AAAA/AAAA/AAAA/Assets/images/home.jpg" class="img-fluid img1">
                                 </div>
                             </div>
@@ -454,6 +457,79 @@
                             Coming Soon
                         </div>
                     </div>
+                    <!--UPCOMING EVENT-->
+                    <div id="upcomingevent">
+                        <div class="topContainer">
+                            <div class="container">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="contentText" style="padding-left:10px;padding-top:40px;">
+                                        <p class="secondHeading">
+                                            <strong>UPCOMING EVENT - SUKHAN 2020</strong>
+                                        </p>
+                                        <p class="secondHeading">
+                                          <a href="https://drive.google.com/open?id=1QHmAG0CiH3BIsO59Zjuc_JkOKpE93vov" target="_blank">
+                                            <button class="btn btn-success large">DOWNLOAD FLYER</button>
+                                          </a>
+                                        </p>
+                                        <p class="contentText">
+                                            SUKHAN was born out of Om Bhutkar's and Nichiketh's common love for Urdu Shayari and 
+                                            their drive to create something out of the passion.They persuaded the idea and after 
+                                            few years were able to put together a Show.
+                                        </p>
+                                        <p class="contenttext">
+                                            Sukhan, is a Pune based mehfil group presents Urdu Ghazals, Nazms combined with prose elements 
+                                            like stories and letters, to diverse audiences in an easy format.
+                                            The contents of Sukhan, is handpicked from the vast treasure of Urdu literature and Shayari, 
+                                            which includes work by <b>Mirza Ghalib, Hafeez Jalandhari, Sahir Ludhianvi. Amir Khusrow, Joan Eliya, 
+                                            Ahmed Faraz,Meer Taqi Meer, Mujtaba Hussain, Nida Fazli, Dagh Dehlvi, Allama Iqbal</b> and many more.
+                                            Sukhan have done almost 1500 shows worldwide including their performance at Jashn-e-Rekhta.
+                                        </p>
+                                        <p class="contenttext">
+                                          <b><i>Its a show for all Urdu Lovers. A show not to MISS.</i></b>
+                                        </p>
+                                        <p class="secondHeading">
+                                            <a href="https://staging.hungamacity.com/event/25381/atlanta-ga-sukhan-a-mehfil-of-urdu-qawwalis-ghazals-nazms-and-dastangoi" target="_blank">
+                                              <button class="btn btn-success large">BUY TICKETS NOW</button>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container col-3">
+                                <video width="320" height="240" controls>
+                                    <source src="https://drive.google.com/file/d/138Eg0UcIre80katVoL1xzBfk7bPzmtwn/view?usp=sharing" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                      <a href="https://drive.google.com/open?id=138Eg0UcIre80katVoL1xzBfk7bPzmtwn">Video 1</a>
+                                </video>
+                            </div>
+                            <div class="row col-3">
+                                <video width="320" height="240" controls>
+                                    <source src="https://drive.google.com/file/d/1PCWK111dpyjbvMAsjlbvA6PG3SdlTBJl/view?usp=sharing" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    <a href="https://drive.google.com/open?id=1PCWK111dpyjbvMAsjlbvA6PG3SdlTBJl">Video 2</a>
+                                </video>
+                            </div>
+                            <div class="row col-3">
+                                <video width="320" height="240" controls>
+                                    <source src="https://drive.google.com/file/d/1zjwi3o2bzvuBgXnK5pX3ihVZg9rtKuSi/view?usp=sharing" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                      <a href="https://drive.google.com/open?id=1zjwi3o2bzvuBgXnK5pX3ihVZg9rtKuSi">Video 3</a>
+                                </video>
+                            </div>
+                            <div class="row col-3">
+                                <video width="320" height="240" controls>
+                                    <source src="https://drive.google.com/file/d/1DAdmLugTSQcxi_L507qEOZvXWmcSFk_C/view?usp=sharing" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                      <a href="https://drive.google.com/open?id=1DAdmLugTSQcxi_L507qEOZvXWmcSFk_C">Video 4</a>
+                                </video>
+                            </div>
+                            <!-- <div class="row">
+                              <img src="Assets/images/sukhan.jpg">
+                            </div> -->
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="clearfix">&nbsp;</div>
+                      </div>
                 </section>
             </content>
             <error id="errorSection" class="hideSection">
@@ -537,6 +613,7 @@
                 $('#events').addClass('hideSection');
                 $('#gallery').addClass('hideSection');
                 $('#publications').addClass('hideSection');
+                $('#upcomingevent').addClass('hideSection');
 
                 $('#lnkContact').removeClass('linkBackColor');
                 $('#lnkAbout').removeClass('linkBackColor');
@@ -577,6 +654,9 @@
                         $('#publications').removeClass('hideSection');
                         $('#lnkPubs').addClass('linkBackColor');
                         GetPublications();
+                        break;  
+                    case "upcomingevent":
+                        $('#upcomingevent').removeClass('hideSection');
                         break;
                     default:
                         $('#home').removeClass('hideSection');
