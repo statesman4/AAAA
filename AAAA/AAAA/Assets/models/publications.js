@@ -77,7 +77,14 @@
           "Date":"2020",
           "Description":"",
           "File":"https://drive.google.com/open?id=1-L1XGM01TkBqq8HZndu6PCYIh9FOlYmK"
-        }
+        },
+        {
+          "Id":12,
+          "Name":"2020 Alig Atlanta",
+          "Date":"2020",
+          "Description":"",
+          "File":"https://drive.google.com/open?id=1sALGeOaq7BgG0zr7TzxR4YDQVrQBa1QA"
+        },
       ]
     }
         
